@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back to School!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', 'Bubblegum Sans', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #ffd1ff 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .welcome-card {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border: 8px solid #ff6b6b;
+            position: relative;
+            animation: bounceIn 1.2s ease;
+        }
+
+        h1 {
+            color: #ff4757;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px #ffeb3b;
+        }
+
+        h2 {
+            color: #2ed573;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #57606f;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .emoji-banner {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 10px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ffa502, #ff6348);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 99, 72, 0.4);
+            transition: transform 0.2s, background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            background: linear-gradient(45deg, #ff6348, #ffa502);
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-card">
+        <div class="emoji-banner">🎒 ✏️ 🎨 🚀</div>
+        <h1>Hello Students!</h1>
+        <h2>Welcome to a Brand New School Year!</h2>
+        <p>Get ready for fun adventures, exciting new friends, and awesome discoveries in every single class. Let’s make this the best year ever!</p>
+        <button class="btn" onclick="alert('Yay! Let the learning begin! 🎉')">Click to Start Adventure!</button>
+    </div>
+
+</body>
+</html>
